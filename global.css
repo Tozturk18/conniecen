@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-gray, #F9FAFF);
+    
+    color: var(--font-high-emphasis, #25282B);
+    font-family: Comfortaa;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 32.4px */
+
+    position: relative;
+    min-height: 100vh;
+
+    overscroll-behavior: none; 
+}
+
+nav h2 {
+    color: var(--font-high-emphasis, #25282B);
+    font-family: Comfortaa;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 32.4px */
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 12px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+nav a {
+    text-decoration: none;
+    
+    color: var(--font-high-emphasis, #25282B);
+
+    /* body / 18px */
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+}
+
+nav a:hover {
+    color: var(--brand-primary, #838e98);
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+footer div {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: -125px;
+}
+
+footer div div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin: 0 !important;
+}
+
+footer a {
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+svg {
+    pointer-events: none;
+}
+
+#footer_img {
+    transform: scale(-1, 1);
+    margin-bottom: -10px;
+}

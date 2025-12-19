@@ -1,0 +1,93 @@
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 4px;
+}
+
+#title h1 {
+    color: var(--font-high-emphasis, #25282B);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+#title span {
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--brand-yellow, #FDC435);
+}
+
+#projects_list {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.project-card {
+    display: flex;
+    margin: 0px 200px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    align-items: center;
+}
+
+.project-info {
+    margin: 50px;
+}
+
+.project-info h3 {
+    color: var(--font-high-emphasis, #25282B);
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.project-info p {
+    margin: 25px 0px;
+    color: var(--font-medium-emphasis, #828282);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.project-info button {
+    background: none;
+    border-radius: 24px;
+    border: 1px solid var(--font-high-emphasis, #25282B);
+    padding: 8px 24px;
+    color: var(--font-high-emphasis, #25282B);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.project-info button:hover {
+    background-color: orange !important;
+    color: gray !important;
+}
+
+.project-thumb {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-thumb img {
+    /*width: calc((100vw - 400px) / 2);*/
+}
