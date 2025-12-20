@@ -54,6 +54,7 @@
     align-items: center;
     justify-content: center;
     width: 75%;
+    max-width: 400px;
 }
 
 #about_media img, #about_media video, #about_media iframe {
