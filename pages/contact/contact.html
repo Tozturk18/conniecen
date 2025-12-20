@@ -8,7 +8,7 @@
     <meta name="description" content="Connie Cen's personal portfolio website.">
 
     <link rel="stylesheet" href="../../global.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
     
     <title>Connie Cen's Portfolio</title>
 
@@ -26,20 +26,60 @@
     </nav>
 
     <main>
-        <div id="about_block">
-            <div id="about_text">
-                <h3>About Me</h3>
-                <p></p>
-                <button>Resume</button>
-            </div>
-            <div id="about_media"></div>
+
+        <div id="title">
+            <h1>Contact Me</h1>
+            <span></span>
         </div>
+
+        <!-- Contact Form -->
+        <section id="contact_section" aria-label="Contact form">
+        <form
+            id="contact_form"
+            action="https://formspree.io/f/xgowawel"
+            method="POST"
+            autocomplete="on"
+            >
+            <div class="field">
+                <label for="contact_name">Name</label>
+                <input id="contact_name" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+                <label for="contact_email">Email</label>
+                <input id="contact_email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+                <label for="contact_subject">Subject</label>
+                <input id="contact_subject" name="subject" type="text" placeholder="What’s this about?" required />
+            </div>
+
+            <div class="field">
+                <label for="contact_message">Message</label>
+                <textarea id="contact_message" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <!-- Optional: makes email prettier in your inbox -->
+            <input type="hidden" name="_subject" value="New portfolio message" />
+
+            <!-- Optional: reply-to convenience -->
+            <input type="hidden" name="_replyto" id="replyto_hidden" />
+
+            <div class="actions">
+                <button id="contact_send" type="submit">Send</button>
+                <p id="contact_status" aria-live="polite"></p>
+            </div>
+        </form>
+        </section>
+
+        
     </main>
 
     <footer>
         <div>
             <div>
-                <a href="https://www.facebook.com/kangying.cen/">
+                <a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                         <path d="M24.75 18.75C24.75 19.9367 24.3981 21.0967 23.7388 22.0834C23.0795 23.0701 22.1425 23.8392 21.0461 24.2933C19.9497 24.7474 18.7433 24.8662 17.5795 24.6347C16.4156 24.4032 15.3465 23.8318 14.5074 22.9926C13.6682 22.1535 13.0968 21.0844 12.8653 19.9205C12.6338 18.7567 12.7526 17.5503 13.2067 16.4539C13.6608 15.3575 14.4299 14.4205 15.4166 13.7612C16.4033 13.1019 17.5633 12.75 18.75 12.75C20.3407 12.7518 21.8658 13.3846 22.9906 14.5094C24.1154 15.6342 24.7482 17.1593 24.75 18.75ZM37.5 10.5V27C37.4968 29.7838 36.3896 32.4527 34.4211 34.4211C32.4527 36.3896 29.7838 37.4968 27 37.5H10.5C7.7162 37.4968 5.04733 36.3896 3.07889 34.4211C1.11044 32.4527 0.00317604 29.7838 0 27V10.5C0.00317604 7.7162 1.11044 5.04733 3.07889 3.07889C5.04733 1.11044 7.7162 0.00317604 10.5 0H27C29.7838 0.00317604 32.4527 1.11044 34.4211 3.07889C36.3896 5.04733 37.4968 7.7162 37.5 10.5ZM27.75 18.75C27.75 16.97 27.2222 15.2299 26.2332 13.7499C25.2443 12.2698 23.8387 11.1163 22.1942 10.4351C20.5496 9.7539 18.74 9.57567 16.9942 9.92293C15.2484 10.2702 13.6447 11.1274 12.386 12.386C11.1274 13.6447 10.2702 15.2484 9.92293 16.9942C9.57567 18.74 9.7539 20.5496 10.4351 22.1942C11.1163 23.8387 12.2698 25.2443 13.7499 26.2332C15.2299 27.2222 16.97 27.75 18.75 27.75C21.1361 27.7473 23.4238 26.7982 25.111 25.111C26.7982 23.4238 27.7473 21.1361 27.75 18.75ZM30.75 9C30.75 8.55499 30.618 8.11998 30.3708 7.74997C30.1236 7.37996 29.7722 7.09157 29.361 6.92127C28.9499 6.75097 28.4975 6.70642 28.061 6.79323C27.6246 6.88005 27.2237 7.09434 26.909 7.40901C26.5943 7.72368 26.38 8.12459 26.2932 8.56105C26.2064 8.9975 26.251 9.4499 26.4213 9.86104C26.5916 10.2722 26.88 10.6236 27.25 10.8708C27.62 11.118 28.055 11.25 28.5 11.25C29.0967 11.25 29.669 11.0129 30.091 10.591C30.5129 10.169 30.75 9.59674 30.75 9Z" fill="#25282B"/>
                     </svg>
@@ -49,7 +89,7 @@
                         <path d="M0 2.72175C0 1.21837 1.24925 0 2.79062 0H35.2094C36.7507 0 38 1.21837 38 2.72175V35.2783C38 36.7816 36.7507 38 35.2094 38H2.79062C1.24925 38 0 36.7816 0 35.2783V2.72175ZM11.7396 31.8108V14.6514H6.03725V31.8108H11.7396ZM8.88963 12.3073C10.8775 12.3073 12.1149 10.9915 12.1149 9.34325C12.0792 7.65938 10.8799 6.37925 8.92762 6.37925C6.97538 6.37925 5.7 7.66175 5.7 9.34325C5.7 10.9915 6.93738 12.3073 8.85163 12.3073H8.88963ZM20.5461 31.8108V22.2276C20.5461 21.7146 20.5841 21.2016 20.7361 20.8359C21.147 19.8123 22.0851 18.7506 23.6621 18.7506C25.726 18.7506 26.5501 20.3229 26.5501 22.6314V31.8108H32.2525V21.9688C32.2525 16.6962 29.4405 14.2453 25.688 14.2453C22.6623 14.2453 21.3061 15.9078 20.5461 17.0786V17.138H20.5081C20.5207 17.1182 20.5334 17.0984 20.5461 17.0786V14.6514H14.8461C14.9174 16.2616 14.8461 31.8108 14.8461 31.8108H20.5461Z" fill="#25282B"/>
                     </svg>
                 </a>
-                <a href="">
+                <a href="../contact/contact.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.13125 4.14667C0.395898 2.96865 1.04647 1.91683 1.97642 1.16349C2.90637 0.410143 4.06057 -8.13185e-05 5.25 1.2091e-08H36.75C37.9394 -8.13185e-05 39.0936 0.410143 40.0236 1.16349C40.9535 1.91683 41.6041 2.96865 41.8687 4.14667L21 17.104L0.13125 4.14667ZM0 7.192V26.136L15.2329 16.648L0 7.192ZM17.7476 18.2133L0.501375 28.952C0.927482 29.8648 1.60001 30.6358 2.44068 31.1754C3.28135 31.715 4.25558 32.001 5.25 32H36.75C37.7443 32.0002 38.7181 31.7136 39.5583 31.1736C40.3985 30.6335 41.0705 29.8622 41.496 28.9493L24.2498 18.2107L21 20.2293L17.7476 18.2107V18.2133ZM26.7671 16.6507L42 26.136V7.192L26.7671 16.648V16.6507Z" fill="#25282B"/>
                     </svg>
@@ -63,7 +103,7 @@
         </svg>
     </footer>
 
-    <script defer src="../../global.js"></script>
-    <script defer src="about.js"></script>
+    <script src="../../global.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

@@ -86,6 +86,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    max-width: calc((100vw - 400px) / 2);
 }
 
 .project-thumb img {
