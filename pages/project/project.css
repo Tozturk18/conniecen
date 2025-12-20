@@ -1,40 +1,39 @@
 main {
-    margin: 25px 10vw;
+    margin: var(--spacing-4xl) 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: var(--spacing-xl);
 }
 
 #title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: var(--spacing-xs);
 }
 
 #title h1 {
-    color: var(--font-high-emphasis, #25282B);
+    color: var(--color-text-primary);
     text-align: center;
-    font-family: "Playfair Display";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
+    font-family: var(--font-display);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
     line-height: 72px;
 }
 
 #title span {
     width: 100px;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--brand-yellow, #FDC435);
+    height: var(--spacing-xs);
+    border-radius: var(--radius-xs);
+    background: var(--color-brand-primary);
 }
 
 #project_intro {
     width: 100%;
-    background-color: white;
-    box-shadow: 0 6px 64px 0 rgba(112, 144, 176, 0.10);
-    border-radius: 25px;
+    background-color: var(--color-bg-card);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-xl);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -56,13 +55,12 @@ main {
 }
 
 #project_desc {
-    padding: 25px;
-    color: var(--font-medium-emphasis, #828282);
-    font-family: Nunito;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    padding: var(--spacing-4xl);
+    color: var(--color-text-secondary);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
 }
 
 /* Body content blocks (A5:B100 output) */
@@ -70,25 +68,25 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: var(--spacing-lg);
 }
 
 .project_block {
     width: 100%;
-    background: white;
-    box-shadow: 0 6px 64px 0 rgba(112, 144, 176, 0.10);
-    border-radius: 18px;
-    padding: 22px 24px;
+    background: var(--color-bg-card);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-2xl) var(--spacing-3xl);
     overflow: hidden;
 }
 
 .project_paragraph {
     margin: 0;
-    color: var(--font-medium-emphasis, #828282);
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 150%;
+    color: var(--color-text-secondary);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
     white-space: pre-wrap;
 }
 
@@ -107,23 +105,23 @@ main {
 
 #project_pagination {
     margin: 10px 10vw 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     justify-content: space-between;
 }
 
 #project_pagination button {
     border: none;
-    cursor: pointer;
-    color: #fdc435;
+    color: var(--color-brand-primary);
     background: none;
-    transition: 0.3s ease;
+    transition: var(--transition-normal);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    font-size: 24px;
+    font-size: var(--font-size-lg);
     width: 88%;
 }
 
@@ -140,16 +138,16 @@ main {
 }
 
 #project_pagination button path {
-    fill: #fdc435;
-    transition: 0.3s ease;
+    fill: var(--color-brand-primary);
+    transition: var(--transition-normal);
 }
 
 #project_pagination button:hover {
-    color: gray !important;
+    color: var(--color-hover) !important;
 }
 
 #project_pagination button:hover path {
-    fill: gray !important;
+    fill: var(--color-hover) !important;
 }
 
 #project_pagination button:disabled {
@@ -158,9 +156,9 @@ main {
 }
 
 #proj_page_label {
-    font-family: Nunito;
-    font-size: 14px;
-    color: rgba(37, 40, 43, 0.7);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
     width: 100%;
     text-align: right;
 }

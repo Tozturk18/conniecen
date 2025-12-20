@@ -224,6 +224,7 @@ async function setupEnsureNextAvailabilityAndBindUI(sheetName, page, hasCurrentP
   const prevBtn = document.getElementById("proj_prev");
   const nextBtn = document.getElementById("proj_next");
   const label = document.getElementById("proj_page_label");
+  const block = document.createElement("div");
 
   if (!wrap || !prevBtn || !nextBtn || !label) return;
 
@@ -239,6 +240,7 @@ async function setupEnsureNextAvailabilityAndBindUI(sheetName, page, hasCurrentP
   if (hasPrev) {
     prevBtn.onclick = () => goToProjectPage(page - 1);
   } else {
+    wrap.prepend(block);
     prevBtn.onclick = null;
   }
 
@@ -269,6 +271,7 @@ async function setupEnsureNextAvailabilityAndBindUI(sheetName, page, hasCurrentP
   if (hasNext) {
     nextBtn.onclick = () => goToProjectPage(page + 1);
   } else {
+    wrap.appendChild(block);
     nextBtn.onclick = null;
   }
 
@@ -279,5 +282,5 @@ async function setupEnsureNextAvailabilityAndBindUI(sheetName, page, hasCurrentP
   // -----------------------------
   const showPagination = hasPrev || hasNext;
 
-  wrap.style.display = showPagination ? "flex" : "none";
+  wrap.style.display = showPagination ? "grid" : "none";
 }

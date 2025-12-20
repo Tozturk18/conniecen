@@ -2,9 +2,13 @@ main {
     display: flex;
 }
 
-#content {
-    margin: 50px;
+body {
+    max-height: 100vh;
+    overflow: hidden;
+}
 
+#content {
+    margin: var(--spacing-6xl);
     width: 40vw;
 }
 
@@ -21,66 +25,54 @@ main {
 }
 
 #content #title {
-    color: var(--brand-yellow, #FDC435);
-    font-family: Nunito;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
+    color: var(--color-brand-primary);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
     line-height: normal;
     text-transform: uppercase;
 }
 
 #content #name {
-    color: var(--font-high-emphasis, #25282B);
-    font-family: "Playfair Display";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    color: var(--color-text-primary);
+    font-family: var(--font-display);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
 }
 
 #content #intro {
-    color: var(--font-medium-emphasis, #828282);
-    font-family: Nunito;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    color: var(--color-text-secondary);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
 }
 
 #buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-top: 25px;
+    margin-top: var(--spacing-4xl);
 }
 
 #buttons a {
-    text-decoration: none;
-
     padding: 5px;
-    margin: 20px 30px;
-
-    color: var(--font-high-emphasis, #25282B);
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 750;
-    line-height: 150%; /* 27px */
-
-    border-radius: 8px;
-    border: 2px solid var(--bg-line, #25282B);
-
+    margin: var(--spacing-xl) 30px;
+    color: var(--color-text-primary);
+    font-family: var(--font-ui);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-extra-bold);
+    line-height: var(--line-height-normal);
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--color-border-dark);
     width: 100%;
-
     text-align: center;
-
-    transition: 0.3s ease;
+    transition: var(--transition-normal);
 }
 
 #buttons a:hover {
-    color: #585858;
-    border: 2px solid #585858;
-    background-color: #fdc435;
+    color: var(--color-hover);
+    border: 2px solid var(--color-hover);
+    background-color: var(--color-brand-primary);
 }

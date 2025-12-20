@@ -2,25 +2,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px 0px;
-    gap: 4px;
+    margin: var(--spacing-4xl) 0;
+    gap: var(--spacing-xs);
 }
 
 #title h1 {
-    color: var(--font-high-emphasis, #25282B);
+    color: var(--color-text-primary);
     text-align: center;
-    font-family: "Playfair Display";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
+    font-family: var(--font-display);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
     line-height: 72px;
 }
 
 #title span {
     width: 100px;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--brand-yellow, #FDC435);
+    height: var(--spacing-xs);
+    border-radius: var(--radius-xs);
+    background: var(--color-brand-primary);
 }
 
 
@@ -38,21 +37,21 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-bottom: 48px;
+  margin-bottom: var(--spacing-5xl);
 }
 
 #title h1 {
   margin: 0;
   font-size: 44px;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 #title span {
   width: 90px;
-  height: 4px;
-  border-radius: 999px;
-  background: #fdc435; /* same yellow as your footer wave */
+  height: var(--spacing-xs);
+  border-radius: var(--radius-round);
+  background: var(--color-brand-primary);
 }
 
 /* Section container */
@@ -67,19 +66,19 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: var(--spacing-lg);
 }
 
 /* Label + input stacks */
 .field {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-sm);
 }
 
 .field label {
-  font-size: 14px;
-  color: #25282b;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
   opacity: 0.85;
 }
 
@@ -87,13 +86,13 @@ body {
 .field input,
 .field textarea {
   width: 100%;
-  font-size: 14px;
-  padding: 12px 14px;
-  border: 1px solid rgba(37, 40, 43, 0.12);
-  border-radius: 8px;
-  background: #f9fafc; /* subtle light fill */
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-md) 14px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-primary);
   outline: none;
-  transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), background var(--transition-base);
 }
 
 .field textarea {
@@ -103,14 +102,14 @@ body {
 
 .field input:focus,
 .field textarea:focus {
-  border-color: rgba(253, 196, 53, 0.9);
-  box-shadow: 0 0 0 4px rgba(253, 196, 53, 0.25);
-  background: #ffffff;
+  border-color: var(--color-brand-hover);
+  box-shadow: var(--shadow-focus);
+  background: var(--color-bg-card);
 }
 
 .field input::placeholder,
 .field textarea::placeholder {
-  color: rgba(37, 40, 43, 0.45);
+  color: var(--color-text-placeholder);
 }
 
 /* Actions row: button on the right, status text below/near it */
@@ -124,14 +123,13 @@ body {
 
 #contact_send {
   border: none;
-  cursor: pointer;
-  background: #fdc435;
-  color: #25282b;
-  font-weight: 600;
-  font-size: 14px;
+  background: var(--color-brand-primary);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
   padding: 10px 22px;
-  border-radius: 8px;
-  transition: transform 80ms ease, filter 120ms ease;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-fast), filter var(--transition-base);
 }
 
 #contact_send:hover {
@@ -149,9 +147,9 @@ body {
 
 #contact_status {
   margin: 0;
-  font-size: 13px;
-  color: rgba(37, 40, 43, 0.7);
-  min-height: 16px; /* keeps layout stable */
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  min-height: 16px;
 }
 
 /* Mobile tweaks */

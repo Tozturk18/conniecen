@@ -1,55 +1,52 @@
 #about_block {
     display: flex;
-    margin: 100px 50px;
+    margin: var(--spacing-8xl) var(--spacing-6xl);
     flex-direction: row;
     align-items: center;
-    gap: 25px;
+    gap: var(--spacing-4xl);
 }
 
 #about_text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
+    gap: var(--spacing-4xl);
 }
 
 #about_text h3 {
-    color: var(--font-high-emphasis, #25282B);
-    font-family: "Playfair Display";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 72px; /* 150% */
+    color: var(--color-text-primary);
+    font-family: var(--font-display);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 72px;
     align-self: stretch;
 }
 
 #about_text p {
-    color: var(--font-medium-emphasis, #828282);
-    font-family: Nunito;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 36px */
+    color: var(--color-text-secondary);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
     align-self: stretch;
 }
 
 #about_text button {
-    border-radius: 8px;
-    background: var(--brand-yellow, #FDC435);
+    border-radius: var(--radius-sm);
+    background: var(--color-brand-primary);
     display: flex;
-    padding: 8px 24px;
+    padding: var(--spacing-sm) var(--spacing-3xl);
     align-items: flex-start;
-    cursor: pointer;
-    transition: 0.3s ease;
+    transition: var(--transition-normal);
 }
 
 #about_text button:hover {
-    background: var(--brand-yellow-dark, #E6B130);
+    background: var(--color-brand-hover);
 }
 
 #about_media {
     overflow: hidden;
-    border-radius: 100%;
+    border-radius: var(--radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
