@@ -32,8 +32,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 200px;
-    height: 450px;
+    margin: 0 var(--spacing-9xl);
+    height: var(--projects-card-height);
     overflow: hidden;
     border-radius: var(--radius-xl);
     background-color: var(--color-bg-card);

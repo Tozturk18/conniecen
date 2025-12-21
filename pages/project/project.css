@@ -41,7 +41,7 @@ main {
 }
 
 #project_media {
-    height: 500px;
+    height: var(--project-media-height);
     width: 100%;
     overflow: hidden;
     display: flex;

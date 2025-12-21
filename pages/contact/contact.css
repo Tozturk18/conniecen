@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: var(--spacing-4xl) 0;
-    gap: var(--spacing-xs);
+    gap: var(--spacing-md);
 }
 
 #title h1 {
@@ -12,57 +12,29 @@
     font-family: var(--font-display);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
-    line-height: 72px;
+    line-height: 1.5;
+    margin: 0;
 }
 
 #title span {
-    width: 100px;
+    width: 6rem;
     height: var(--spacing-xs);
-    border-radius: var(--radius-xs);
+    border-radius: var(--radius-round);
     background: var(--color-brand-primary);
 }
 
-
-/* Contact Form */
-/* contact.css */
+/* ============================================
+   CONTACT FORM SECTION
+   ============================================ */
 
 body {
-  /* keep consistent spacing from nav */
-  min-height: 100vh;
-}
-
-/* Title block: centered with short underline */
-#title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: var(--spacing-5xl);
-}
-
-#title h1 {
-  margin: 0;
-  font-size: 44px;
-  line-height: 1.1;
-  font-weight: var(--font-weight-bold);
-}
-
-#title span {
-  width: 90px;
-  height: var(--spacing-xs);
-  border-radius: var(--radius-round);
-  background: var(--color-brand-primary);
-}
-
-/* Section container */
-#contact_section {
-  display: flex;
-  justify-content: center;
+    /* Keep consistent spacing from nav */
+    min-height: 100vh;
 }
 
 /* Form sizing like the template */
 #contact_form {
-  width: 420px;
+  width: var(--modal-max-width);
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -82,12 +54,12 @@ body {
   opacity: 0.85;
 }
 
-/* Inputs */
+/* Input and textarea fields */
 .field input,
 .field textarea {
   width: 100%;
   font-size: var(--font-size-sm);
-  padding: var(--spacing-md) 14px;
+  padding: var(--spacing-md) var(--spacing-lg);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-sm);
   background: var(--color-bg-primary);
@@ -96,7 +68,7 @@ body {
 }
 
 .field textarea {
-  min-height: 150px;
+  min-height: var(--textarea-min-height);
   resize: vertical;
 }
 
@@ -117,8 +89,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
-  margin-top: 6px;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
 }
 
 #contact_send {
@@ -127,7 +99,7 @@ body {
   color: var(--color-text-primary);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-sm);
-  padding: 10px 22px;
+  padding: var(--spacing-sm) var(--spacing-3xl);
   border-radius: var(--radius-sm);
   transition: transform var(--transition-fast), filter var(--transition-base);
 }
@@ -149,7 +121,7 @@ body {
   margin: 0;
   font-size: var(--font-size-xs);
   color: var(--color-text-tertiary);
-  min-height: 16px;
+  min-height: 1rem;
 }
 
 /* Mobile tweaks */

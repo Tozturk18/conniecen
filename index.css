@@ -61,8 +61,8 @@ body {
 }
 
 #buttons a {
-    padding: 5px;
-    margin: var(--spacing-xl) 30px;
+    padding: var(--spacing-sm);
+    margin: var(--spacing-xl) var(--spacing-3xl);
     color: var(--color-text-primary);
     font-family: var(--font-ui);
     font-size: var(--font-size-base);
