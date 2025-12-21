@@ -20,7 +20,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: -1;
+    z-index: -3;
 }
 
 #hero_image img {
@@ -109,14 +109,15 @@ body {
 
 /* Mobile devices (≤768px) */
 @media (max-width: 768px) {
-    body {
-        max-height: none;
-        overflow: visible;
-    }
     
     main {
         flex-direction: column-reverse;
         padding-bottom: var(--spacing-6xl);
+    }
+
+    body {
+        max-height: none;
+        overflow: visible;
     }
     
     #content {

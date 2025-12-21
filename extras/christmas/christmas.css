@@ -1,0 +1,64 @@
+/* ============================================
+   CHRISTMAS EASTER EGG STYLES
+   ============================================ */
+
+extra {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#tree_image {
+    right: -150px;
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+}
+
+#santa_image {
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+    bottom: calc(100vw * (95.55 / 399.99) - 100px - 33px);
+    perspective: 1000px;
+    backface-visibility: hidden;
+    transform-origin: center center;
+    will-change: transform;
+    animation: santa_move 2.3s linear 0.5s;
+}
+
+/* ============================================
+   SANTA ANIMATION KEYFRAMES
+   ============================================ */
+
+@keyframes santa_move {
+    /* Smoothed last 4 frames for consistent momentum - no stuttering */
+    0%   { transform: translate3d(0px, 0px, 0) rotate(0deg); }
+    12%  { transform: translate3d(11.16vw, calc(1.22px / (11.02vh / 100vw) * 2), 0) rotate(6deg); }
+    24%  { transform: translate3d(26.04vw, calc(4px / (11.02vh / 100vw) * 2), 0) rotate(8deg); }
+    36%  { transform: translate3d(46.07vw, calc(6.9px / (11.02vh / 100vw) * 2), 0) rotate(-10deg); }
+    48%  { transform: translate3d(65.16vw, calc(4.72px / (11.02vh / 100vw) * 2), 0) rotate(-22deg); }
+    60%  { transform: translate3d(74.65vw, calc(4.43px / (11.02vh / 100vw) * 2), 0) rotate(-27deg); }
+    72%  { transform: translate3d(84.14vw, calc(3.93px / (11.02vh / 100vw) * 2), 0) rotate(-32deg); }
+    84%  { transform: translate3d(93.63vw, calc(2.9px / (11.02vh / 100vw) * 2), 0) rotate(-37deg); }
+    100% { transform: translate3d(101.39vw, calc(-0.32px / (11.02vh / 100vw) * 2), 0) rotate(-40deg); }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Mobile devices (≤768px) */
+@media (max-width: 768px) {
+    #tree_image {
+        opacity: 0.5;
+    }
+
+    #santa_image {
+        bottom: calc(100vw * (95.55 / 399.99) - 33px);
+    }
+}
