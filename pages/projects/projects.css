@@ -87,3 +87,116 @@
 .project-thumb img {
     /* width: calc((100vw - 400px) / 2); */
 }
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Large tablets (≤1200px) */
+@media (max-width: 1200px) {
+    .project-card {
+        margin: 0 100px;
+        height: auto;
+        min-height: 400px;
+    }
+    
+    .project-thumb {
+        max-width: 50%;
+    }
+}
+
+/* Tablet and below (≤1024px) */
+@media (max-width: 1024px) {
+    #projects_list {
+        gap: var(--spacing-6xl);
+    }
+    
+    .project-card {
+        margin: 0 var(--spacing-5xl);
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .project-info {
+        margin: var(--spacing-4xl);
+    }
+    
+    .project-info h3 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .project-thumb {
+        max-width: 100%;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .project-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Mobile devices (≤768px) */
+@media (max-width: 768px) {
+    #title {
+        margin: var(--spacing-4xl) 0;
+    }
+    
+    #title h1 {
+        font-size: var(--font-size-2xl);
+        line-height: 1.2;
+    }
+    
+    #projects_list {
+        gap: var(--spacing-5xl);
+    }
+    
+    .project-card {
+        margin: 0 var(--spacing-xl);
+        border-radius: var(--radius-md);
+    }
+    
+    .project-info {
+        margin: var(--spacing-3xl);
+    }
+    
+    .project-info h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .project-info p {
+        margin: var(--spacing-xl) 0;
+        font-size: var(--font-size-sm);
+    }
+    
+    .project-thumb {
+        height: 250px;
+    }
+}
+
+/* Small mobile (≤480px) */
+@media (max-width: 480px) {
+    .project-card {
+        margin: 0 var(--spacing-md);
+    }
+    
+    .project-info {
+        margin: var(--spacing-xl);
+    }
+    
+    .project-info h3 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .project-info button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .project-thumb {
+        height: 200px;
+    }
+}

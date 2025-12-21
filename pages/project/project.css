@@ -162,3 +162,118 @@ main {
     width: 100%;
     text-align: right;
 }
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet and below (≤1024px) */
+@media (max-width: 1024px) {
+    main {
+        margin: var(--spacing-4xl) 5vw;
+    }
+    
+    #project_media {
+        height: 400px;
+    }
+    
+    #project_pagination {
+        margin: 10px 5vw 40px;
+    }
+}
+
+/* Mobile devices (≤768px) */
+@media (max-width: 768px) {
+    main {
+        margin: var(--spacing-xl) var(--spacing-xl);
+        gap: var(--spacing-md);
+    }
+    
+    #title h1 {
+        font-size: var(--font-size-2xl);
+        line-height: 1.2;
+    }
+    
+    #project_intro {
+        border-radius: var(--radius-md);
+    }
+    
+    #project_media {
+        height: 300px;
+    }
+    
+    #project_desc {
+        padding: var(--spacing-xl);
+        font-size: var(--font-size-base);
+    }
+    
+    .project_block {
+        padding: var(--spacing-lg) var(--spacing-xl);
+        border-radius: var(--radius-sm);
+    }
+    
+    .project_paragraph {
+        font-size: var(--font-size-sm);
+    }
+    
+    #project_pagination {
+        margin: var(--spacing-xl) var(--spacing-xl) var(--spacing-4xl);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: var(--spacing-md);
+    }
+    
+    #project_pagination button {
+        width: 100%;
+        font-size: var(--font-size-md);
+    }
+    
+    #proj_next {
+        order: 3;
+    }
+    
+    #proj_prev {
+        order: 1;
+    }
+    
+    #proj_page_label {
+        order: 2;
+        text-align: center;
+    }
+    
+    #project_pagination button svg {
+        width: 40px;
+    }
+}
+
+/* Small mobile (≤480px) */
+@media (max-width: 480px) {
+    main {
+        margin: var(--spacing-md);
+    }
+    
+    #title h1 {
+        font-size: var(--font-size-xl);
+    }
+    
+    #project_media {
+        height: 250px;
+    }
+    
+    #project_desc {
+        padding: var(--spacing-md);
+        font-size: var(--font-size-sm);
+    }
+    
+    .project_block {
+        padding: var(--spacing-md);
+    }
+    
+    #project_pagination {
+        margin: var(--spacing-md);
+    }
+    
+    #project_pagination button {
+        font-size: var(--font-size-base);
+    }
+}

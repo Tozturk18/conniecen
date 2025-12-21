@@ -60,3 +60,74 @@
     display: block;
     overflow: hidden;
 }
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet and below (≤1024px) */
+@media (max-width: 1024px) {
+    #about_block {
+        margin: var(--spacing-6xl) var(--spacing-4xl);
+        gap: var(--spacing-3xl);
+    }
+    
+    #about_text h3 {
+        font-size: var(--font-size-xl);
+        line-height: 1.3;
+    }
+    
+    #about_text p {
+        font-size: var(--font-size-md);
+    }
+    
+    #about_media {
+        width: 80%;
+        max-width: 350px;
+    }
+}
+
+/* Mobile devices (≤768px) */
+@media (max-width: 768px) {
+    #about_block {
+        flex-direction: column-reverse;
+        margin: var(--spacing-5xl) var(--spacing-xl);
+        gap: var(--spacing-4xl);
+        padding-top: 100px;
+        margin-top: 0;
+    }
+    
+    #about_text {
+        gap: var(--spacing-xl);
+    }
+    
+    #about_text h3 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    #about_text p {
+        font-size: var(--font-size-base);
+    }
+    
+    #about_media {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Small mobile (≤480px) */
+@media (max-width: 480px) {
+    #about_block {
+        margin: var(--spacing-4xl) var(--spacing-md);
+        margin-top: 0;
+    }
+    
+    #about_text h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    #about_media {
+        max-width: 250px;
+    }
+}

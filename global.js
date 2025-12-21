@@ -51,6 +51,21 @@ function setText(idOrEl, text) {
   el.textContent = text ?? "";
 }
 
+const menuButton = document.getElementById("menu_button");
+
+menuButton?.addEventListener("click", menuToggle);
+
+function menuToggle() {
+  const menuBars = menuButton.querySelectorAll("span");
+  
+  menuBars[0].classList.toggle("toggle1");
+  menuBars[1].classList.toggle("toggle2");
+  menuBars[2].classList.toggle("toggle3");
+  
+  const navLinks = document.querySelector("nav");
+  navLinks.classList.toggle("show");
+}
+
 // -----------------------------
 // Google Drive helpers
 // -----------------------------
