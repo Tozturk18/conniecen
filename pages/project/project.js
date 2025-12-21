@@ -271,7 +271,7 @@ async function setupEnsureNextAvailabilityAndBindUI(sheetName, page, hasCurrentP
   if (hasNext) {
     nextBtn.onclick = () => goToProjectPage(page + 1);
   } else {
-    wrap.appendChild(block);
+    //wrap.appendChild(block);
     nextBtn.onclick = null;
   }
 

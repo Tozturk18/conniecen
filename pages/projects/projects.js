@@ -55,6 +55,7 @@
       if (index % 2 === 0) {
         card.appendChild(info);
         card.appendChild(media);
+        card.classList.add("reverse");
       } else {
         card.appendChild(media);
         card.appendChild(info);

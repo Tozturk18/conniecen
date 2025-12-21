@@ -154,8 +154,17 @@ body {
 
 /* Mobile tweaks */
 @media (max-width: 520px) {
+  #title {
+    margin-top: 0;
+    padding-top: 100px;
+  }
+
   #title h1 {
     font-size: 36px;
+  }
+
+  #contact_section {
+    margin: 0 var(--spacing-6xl)
   }
 
   #contact_form {

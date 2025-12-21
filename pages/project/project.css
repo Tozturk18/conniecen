@@ -187,6 +187,8 @@ main {
     main {
         margin: var(--spacing-xl) var(--spacing-xl);
         gap: var(--spacing-md);
+        margin-top: 0;
+        padding-top: 100px;
     }
     
     #title h1 {
@@ -218,9 +220,6 @@ main {
     
     #project_pagination {
         margin: var(--spacing-xl) var(--spacing-xl) var(--spacing-4xl);
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        gap: var(--spacing-md);
     }
     
     #project_pagination button {

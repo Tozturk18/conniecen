@@ -30,12 +30,13 @@
 
 .project-card {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 200px;
     height: 450px;
     overflow: hidden;
     border-radius: var(--radius-xl);
     background-color: var(--color-bg-card);
-    align-items: center;
 }
 
 .project-info {
@@ -142,6 +143,8 @@
 @media (max-width: 768px) {
     #title {
         margin: var(--spacing-4xl) 0;
+        margin-top: 0;
+        padding-top: 100px;
     }
     
     #title h1 {
@@ -151,6 +154,7 @@
     
     #projects_list {
         gap: var(--spacing-5xl);
+        margin: 0 var(--spacing-6xl);
     }
     
     .project-card {
@@ -159,7 +163,12 @@
     }
     
     .project-info {
+        width: -webkit-fill-available;
         margin: var(--spacing-3xl);
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
     }
     
     .project-info h3 {
