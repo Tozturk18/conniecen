@@ -380,6 +380,7 @@ footer a {
         top: 65px;
         z-index: 2;
         margin: 0px 10px;
+        width: fit-content;
     }
     
     nav a {

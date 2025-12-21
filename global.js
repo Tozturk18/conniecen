@@ -66,6 +66,29 @@ function menuToggle() {
   navLinks.classList.toggle("show");
 }
 
+function closeMenu() {
+  const navLinks = document.querySelector("nav");
+  if (!navLinks) return;
+
+  navLinks.classList.remove("show");
+
+  if (!menuButton) return;
+  const menuBars = menuButton.querySelectorAll("span");
+  if (menuBars.length === 3) {
+    menuBars[0].classList.remove("toggle1");
+    menuBars[1].classList.remove("toggle2");
+    menuBars[2].classList.remove("toggle3");
+  }
+}
+
+const mainEl = document.querySelector("main");
+mainEl?.addEventListener("click", () => {
+  const navLinks = document.querySelector("nav");
+  if (navLinks?.classList.contains("show")) {
+    closeMenu();
+  }
+});
+
 // -----------------------------
 // Google Drive helpers
 // -----------------------------
