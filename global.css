@@ -97,6 +97,21 @@
     --breakpoint-mobile: 768px;
     --breakpoint-tablet: 1024px;
     --breakpoint-desktop: 1440px;
+    
+    /* --- Fixed Dimensions (for specific UI elements) --- */
+    --nav-menu-button-size: 30px;
+    --social-icon-size: 48px;
+    --social-icon-medium: 38px;
+    --project-media-height: 500px;
+    --project-media-height-tablet: 400px;
+    --project-media-height-mobile: 300px;
+    --project-media-height-small-mobile: 250px;
+    --modal-max-width: 420px;
+    --textarea-min-height: 150px;
+    --projects-card-height: 450px;
+    --projects-thumb-height: 300px;
+    --projects-thumb-height-small: 250px;
+    --projects-thumb-height-xs: 200px;
 }
 
 
@@ -371,7 +386,6 @@ footer a {
     }
     
     nav #nav_links {
-        flex-direction: column;
         gap: var(--spacing-md);
         width: 100%;
         transition: 0.3s ease;
@@ -379,8 +393,11 @@ footer a {
         right: 0;
         top: 65px;
         z-index: 2;
-        margin: 0px 10px;
-        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-evenly;
+        align-items: center;
     }
     
     nav a {

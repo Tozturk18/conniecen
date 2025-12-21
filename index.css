@@ -7,6 +7,10 @@ body {
     overflow: hidden;
 }
 
+#menu_button {
+    display: none !important;
+}
+
 #content {
     margin: var(--spacing-6xl);
     width: 40vw;
@@ -124,7 +128,7 @@ body {
     #hero_image {
         position: relative;
         width: 100%;
-        
+
         margin-bottom: -20px;
     }
     
