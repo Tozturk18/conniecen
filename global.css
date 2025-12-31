@@ -139,7 +139,7 @@ body {
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-relaxed);
     position: relative;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     max-width: 100vw;
     overscroll-behavior: none;
 }
@@ -257,10 +257,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: var(--spacing-8xl);
 
     position: absolute;
-    bottom: -100px;
+    bottom: -350px;
     margin: 0 !important;
     z-index: -1;
 }
@@ -356,6 +355,7 @@ footer a {
     
     body {
         font-size: var(--font-size-base);
+        min-height: 100vh;
     }
 
     main {
