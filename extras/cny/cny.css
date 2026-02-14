@@ -1,0 +1,480 @@
+
+    .card {
+      font-family: 'Zhi Mang Xing', cursive;
+    overflow:hidden;
+    margin:auto;
+    width: 340px;
+    height: 583px; 
+    border: 10px solid #d7000f;
+    filter:drop-shadow(3px 3px 6px black);
+    position: relative;
+    background: linear-gradient(45deg, #fdee83, #fefcea);
+    }
+
+
+/*     .lantern{
+        position: absolute;
+        top: -25px;
+        height: 250px;
+        width: 250px;
+        background: url(https://hbimg.huabanimg.com/8de8ab53462a04dc5700e1e6c5231afd63e1e301679a8-kw1S3L);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(0px 0px 30px #d7000f);
+        -moz-animation: 3s ease 0s normal none infinite swing;
+        -webkit-animation:swing 3s infinite ease-in-out;
+        transform-origin: top;
+        } */
+        
+    
+    @-moz-keyframes swing{
+        0%{-moz-transform:rotate(-10deg)}
+        50%{-moz-transform:rotate(10deg)}
+        100%{-moz-transform:rotate(-10deg)}
+    }
+    @-webkit-keyframes swing{
+        0%{-webkit-transform:rotate(-10deg)}
+        50%{-webkit-transform:rotate(10deg)}
+        100%{-webkit-transform:rotate(-10deg)}
+    }
+
+    .card-title {
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 60px;
+    letter-spacing: 20px;
+    font-family: 'Zhi Mang Xing', cursive;
+    writing-mode: vertical-rl;
+    }
+
+
+    .card-seal {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 300px;
+    right: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: #d7000f;
+    /* border: 3px solid #d7000f; */
+    /* border-radius: 10px; */
+    background: url(https://hbimg.huabanimg.com/1f1b09133c22f93a3e30e6727351ba1bb2b57ae92079e-8p7iri);
+    background-size: 300%;
+    background-position: 0% 0%;
+    }
+
+
+    .card-flower-1 {
+    position: relative;
+    top: 200px;
+    left: 70px;
+    transform: rotate(-10deg); /* 追加 */
+    }
+    .card-flower-2 {
+    position: relative;
+    top: 50px;
+    left: 160px;
+    transform: rotate(10deg) scale(.7);
+    }
+    .card-flower-3 {
+    position: relative;
+    top: 330px;
+    left: 200px;
+    transform: rotate(10deg) scale(1.2);
+    }
+
+
+    .card-flower-petal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(#DF4554, #E16561);
+    }
+    .petal-1 {
+    top: 0;
+    left: 0;
+    }
+    .petal-2 {
+    top: 10px;
+    left: 15px;
+    }
+    .petal-3 {
+    top: 25px;
+    left: 10px;
+    }
+    .petal-4 {
+    top: 25px;
+    left: -10px;
+    }
+    .petal-5 {
+    top: 10px;
+    left: -15px;
+    }
+
+
+    .card-flower-pollen {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fdee83;
+    }
+    .pollen-1 {
+    top: 18px;
+    left: 12px;
+    }
+    .pollen-2 {
+    top: 22px;
+    left: 18px;
+    }
+    .pollen-3 {
+    top: 29px;
+    left: 16px;
+    }
+    .pollen-4 {
+    top: 29px;
+    left: 8px;
+    }
+    .pollen-5 {
+    top: 22px;
+    left: 6px;
+    }
+
+    /* 丘 */
+    .card-hill{
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    }
+    /* 左丘 */
+    .hill-1 {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    box-sizing: border-box;
+    border-top: 10px solid #D9AF64;
+    border-right: 10px solid #D9AF64;
+    border-radius: 0 250px 0 0;
+    }
+    /* 右丘 */
+    .hill-2 {
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background: #ffc966;
+    border-top: 10px solid #D9AF64;
+    border-left: 10px solid #D9AF64;
+    border-radius: 250px 0 0 0;
+    }
+    /* 中央丘 */
+    .hill-3 {
+    width: 340px;
+    height: 197px;
+    background: #D7000F;
+    border-top: 10px solid #D9AF64;
+    border-left: 10px solid #D9AF64;
+    border-right: 10px solid #D9AF64;
+    border-radius: 340px 340px 0 0;
+    }
+    /* 模様~星~ */
+    .card-hill-star {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 14px solid #D9AF64;
+    }
+    .card-hill-star::before, .card-hill-star::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 14px solid #D9AF64;
+    }
+    .card-hill-star::before {
+    transform: rotate(71deg);
+    }
+    .card-hill-star::after {
+        transform: rotate(-71deg);
+    }
+    .star-1 {
+    top: 20px;
+    left: 5px;
+    }
+    .star-2 {
+    top: 75px;
+    left: 15px;
+    }
+    .star-3 {
+    top: 10px;
+    left: 60px;
+    }
+
+    .card-hill-circle-1 {
+    position: relative;
+    }
+    .card-hill-circle-2 {
+    position: relative;
+    top: 26px;
+    }
+    .card-hill-circle-3 {
+    position: relative;
+    top: 62px;
+    }
+    .card-hill-circle-4 {
+    position: relative;
+    top: 88px;
+    }
+    .card-hill-circle-5 {
+    position: relative;
+    top: 114px;
+    }
+    .hill-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #D9AF64;
+    border-radius: 50%;
+    }
+    .circle-1 {
+    top: 45px;
+    left: 117px;
+    }
+    .circle-2 {
+    top: 35px;
+    left: 138px;
+    }
+    .circle-3 {
+    top: 25px;
+    left: 165px;
+    }
+    .circle-4 {
+    top: 15px;
+    left: 186px;
+    }
+    .circle-5 {
+    top: 5px;
+    left: 213px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transform: rotate(45deg);
+    }
+
+    .card-hill-border-1 {
+    position: relative;
+    left: -30px;
+    top: 200px;
+    }
+    .card-hill-border-2 {
+    position: relative;
+    left: 80px;
+    top: 180px;
+    transform: rotate(10deg);
+    }
+    .card-hill-border-3 {
+    position: relative;
+    left: 10px;
+    top: 110px;
+    transform: rotate(-15deg);
+    }
+    .border-1 {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    background: transparent;
+    border-top: 5px solid #D9AF64;
+    transform: rotate(5deg);
+    }
+    .border-2 {
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    background: transparent;
+    border-top: 5px solid #D9AF64;
+    transform: rotate(20deg);
+    } 
+
+.wrapper{
+  position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kandil {
+  width: 220px;
+  height: 220px;
+  padding: 50px 25px;
+  transform-origin: top;
+  animation: kandil 6s ease-in infinite both;
+}
+.kandil-hang {
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  top: -46%;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+  border: 1px dotted #e72f23;
+  z-index: -1;
+}
+.kandil-top {
+  margin: 0 auto;
+  position: relative;
+  width: 75%;
+  height: 10%;
+  background-color: #de1808;
+  background-size: 20px 20px;
+  z-index: 11;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.kandil-inner {
+  width: 75%;
+  height: 100%;
+  background: #cc6600;
+  margin: 0 auto;
+  position: relative;
+  animation: flash-1 5s infinite;
+  color:red;
+  font-size:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.kandil-left,
+.kandil-right {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background: #de1808;
+  transform: rotate(45deg);
+}
+.kandil-left {
+  left: -35%;
+  top: 15%;
+}
+.kandil-right {
+  right: -35%;
+  top: 15%;
+}
+.kandil-bottom {
+  position: absolute;
+  background-color: #e72f23;
+  width: 100%;
+  bottom: -20%;
+  height: 20%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.ribbons {
+  height: 50%;
+    width: 30%;
+    margin: 0 auto;
+    top: 8%;
+    z-index: 1;
+    position: relative;
+  list-style:none;
+}
+.ribbons > li {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  top: 0;
+  transform-origin: top;
+  animation: kandilLadi 4s ease-in infinite both;
+}
+.ribbons > li:nth-child(odd) {
+  background-color: #cc6600;
+}
+.ribbons > li:nth-child(even) {
+  background-color: #e72f23;
+}
+.ribbons > li:nth-child(1) {
+  left: 5%;
+  animation-delay: 0.2s;
+}
+.ribbons > li:nth-child(2) {
+  left: 13%;
+  animation-delay: 0.4s;
+}
+.ribbons > li:nth-child(3) {
+  left: 21%;
+  animation-delay: 0.6s;
+}
+.ribbons > li:nth-child(4) {
+  left: 30%;
+  animation-delay: 0.8s;
+}
+.ribbons > li:nth-child(5) {
+  left: 38%;
+  animation-delay: 1s;
+}
+.ribbons > li:nth-child(6) {
+  left: 47%;
+  animation-delay: 1.2s;
+}
+.ribbons > li:nth-child(7) {
+  left: 57%;
+  animation-delay: 1.4s;
+}
+.ribbons > li:nth-child(8) {
+  left: 66%;
+  animation-delay: 1.6s;
+}
+.ribbons > li:nth-child(9) {
+  left: 75%;
+  animation-delay: 1.8s;
+}
+.ribbons > li:nth-child(10) {
+  left: 84%;
+  animation-delay: 2s;
+}
+/*Animation */
+@keyframes kandilLadi {
+  0%,
+  100% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes kandil {
+  0%,
+  100% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes flash-1 {
+  0%,
+  100% {
+    background: #ffd700;
+    box-shadow: inset 0px 4.6666666667px 24px 3px #ffd700,
+      0px 4.6666666667px 24px 3px #ffd700;
+  }
+  50% {
+    background: #cc6600;
+    box-shadow: inset 0px 4.6666666667px 24px 3px #cc6600,
+      0px 4.6666666667px 24px 3px #cc6600;
+  }
+}
+    
